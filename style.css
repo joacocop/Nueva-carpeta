@@ -1,3 +1,70 @@
-body{
-    background-color: aliceblue;
+html{
+   background-image: url(https://www.yosoyungamer.cloud/wp-content/uploads/2018/11/brawl-stars.jpg);
+   background-repeat: no-repeat;
+   background-repeat: repeat-x;
+   background-repeat: repeat-y;
+   background-size: cover;
 }
+
+header{
+    font-size: 85px;    
+
+    h1{
+        text-align: center;
+    }
+}
+
+.inicial{
+    background-color: lightblue;
+    text-align: center;
+    padding: 5px;
+    margin:10px 700px 10px 700px;
+    border-radius: 50px ;
+    border: 2px solid white;
+}
+
+.especial{
+    background-color: green;
+    text-align: center;
+    padding: 5px;
+    margin:10px 700px 10px 700px;
+    border-radius: 50px ;
+    border: 2px solid white;
+}
+
+.raros{
+    background-color: dodgerblue;
+    text-align: center;
+    padding: 5px;
+    margin:10px 700px 10px 700px;
+    border-radius: 50px ;
+    border: 2px solid white;
+}
+
+.epic{
+    background-color: blueviolet;
+    text-align: center;
+    padding: 5px;
+    margin:10px 700px 10px 700px;
+    border-radius: 50px ;
+    border: 2px solid white;
+}
+
+.mitic{
+    background-color: crimson;
+    text-align: center;
+    padding: 5px;
+    margin:10px 700px 10px 700px;
+    border-radius: 50px ;
+    border: 2px solid white;
+}
+
+.legend{
+    background-color: yellow;
+    text-align: center;
+    padding: 5px;
+    margin:10px 700px 10px 700px;
+    border-radius: 50px ;
+    border: 2px solid white;
+}
+
