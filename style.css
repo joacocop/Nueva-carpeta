@@ -1,70 +1,73 @@
-html{
-   background-image: url(https://www.yosoyungamer.cloud/wp-content/uploads/2018/11/brawl-stars.jpg);
-   background-repeat: no-repeat;
-   background-repeat: repeat-x;
-   background-repeat: repeat-y;
-   background-size: cover;
-}
+ul {
+    
+    list-style-type: none;
+    margin-left: 600px;
+    margin-right: 600px;
+    padding: opx;
+    
+   }
+   li {
+    float: left;
+   }
+
+   li a {
+    display: block;
+   color: rgb(244, 229, 229);
+   text-align: center;
+   padding: 14px 50px;
+   text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: yellow
+    }
+
+    a{
+        background-color: rgb(14, 10, 10);
+        display: block;
+        padding: 8px;
+    }
+
 
 header{
-    font-size: 85px;    
-
-    h1{
-        text-align: center;
-    }
-}
-
-.inicial{
-    background-color: lightblue;
     text-align: center;
-    padding: 5px;
-    margin:10px 700px 10px 700px;
-    border-radius: 50px ;
-    border: 2px solid white;
+    font-size: 15px;
+    color: white;
+    padding: 10px 0;
+}
+html{
+    background-image: url(https://preview.redd.it/4fqfwcdogin61.png?width=1080&crop=smart&auto=webp&s=6f4c8eb0beb3bad6f53e9100ce7cd3287d883675);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: auto;
+    height: auto;
+}
+main{
+    background-color: black;
+    color: white;
+    margin-right: 400px;
+    margin-left: 400px;
+    margin-top: 200px;
 }
 
-.especial{
-    background-color: green;
+h2{
     text-align: center;
-    padding: 5px;
-    margin:10px 700px 10px 700px;
-    border-radius: 50px ;
-    border: 2px solid white;
+    font-size: 40;
+}
+p{
+    text-align: justify;
 }
 
-.raros{
-    background-color: dodgerblue;
-    text-align: center;
-    padding: 5px;
-    margin:10px 700px 10px 700px;
-    border-radius: 50px ;
-    border: 2px solid white;
-}
+.contenedorimg{
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+    line-height: 25px;
+    width:1040px ;
+    margin: 0px 30px;
+    padding: 0%;
+    height: 400px;
+    
 
-.epic{
-    background-color: blueviolet;
-    text-align: center;
-    padding: 5px;
-    margin:10px 700px 10px 700px;
-    border-radius: 50px ;
-    border: 2px solid white;
 }
-
-.mitic{
-    background-color: crimson;
-    text-align: center;
-    padding: 5px;
-    margin:10px 700px 10px 700px;
-    border-radius: 50px ;
-    border: 2px solid white;
-}
-
-.legend{
-    background-color: yellow;
-    text-align: center;
-    padding: 5px;
-    margin:10px 700px 10px 700px;
-    border-radius: 50px ;
-    border: 2px solid white;
-}
-
