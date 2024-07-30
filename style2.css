@@ -6,64 +6,34 @@ html{
 }
 
 header{
-    font-size: 85px;    
+    font-size: 170%;  
 
     h1{
         text-align: center;
+    }   
+}
+
+
+.sec{
+    h2{
+        text-align: center;
+        background-color: skyblue;
+        margin-left: 35%;
+        margin-right: 35%;
+        padding: 10px;
+        border-radius: 15px ;
+        border: 4px solid black;
+        
+
     }
 }
 
-.inicial{
-    background-color: lightblue;
-    text-align: center;
-    padding: 5px;
-    margin:10px 700px 10px 700px;
-    border-radius: 50px ;
-    border: 2px solid white;
+.pri{
+    border-radius: 20px;
+    border: 4px solid black;
+    margin-left: 10%;
+    margin-right: 10%;
+    h2{
+        font-size: 170%;
+    }
 }
-
-.especial{
-    background-color: green;
-    text-align: center;
-    padding: 5px;
-    margin:10px 700px 10px 700px;
-    border-radius: 50px ;
-    border: 2px solid white;
-}
-
-.raros{
-    background-color: dodgerblue;
-    text-align: center;
-    padding: 5px;
-    margin:10px 700px 10px 700px;
-    border-radius: 50px ;
-    border: 2px solid white;
-}
-
-.epic{
-    background-color: blueviolet;
-    text-align: center;
-    padding: 5px;
-    margin:10px 700px 10px 700px;
-    border-radius: 50px ;
-    border: 2px solid white;
-}
-
-.mitic{
-    background-color: crimson;
-    text-align: center;
-    padding: 5px;
-    margin:10px 700px 10px 700px;
-    border-radius: 50px ;
-    border: 2px solid white;
-}
-
-.legend{
-    background-color: yellow;
-    text-align: center;
-    padding: 5px;
-    margin:10px 700px 10px 700px;
-    border-radius: 50px ;
-    border: 2px solid white;
-}
-
