@@ -19,7 +19,7 @@ ul {
     }
 
     li a:hover {
-        background-color: yellow
+        background-color: red
     }
 
     a{
@@ -36,7 +36,7 @@ header{
     padding: 10px 0;
 }
 html{
-    background-image: url(https://preview.redd.it/4fqfwcdogin61.png?width=1080&crop=smart&auto=webp&s=6f4c8eb0beb3bad6f53e9100ce7cd3287d883675);
+    background-image: url(https://i.pinimg.com/originals/17/85/34/1785347fe1ff67051360befee1726768.jpg);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -44,7 +44,7 @@ html{
     height: auto;
 }
 main{
-    background-color: black;
+    background-color: rgb(0, 157, 215);
     color: white;
     margin-right: 400px;
     margin-left: 400px;
@@ -64,8 +64,8 @@ p{
     margin-right: auto;
     position: static;
     line-height: 25px;
-    width:1040px ;
-    margin: 0px 30px;
+    width:700px ;
+    margin: 0px 190px;
     padding: 0%;
     height: 400px;
     
