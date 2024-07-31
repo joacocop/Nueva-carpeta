@@ -48,7 +48,8 @@ main{
     color: white;
     margin-right: 400px;
     margin-left: 400px;
-    margin-top: 200px;
+    margin-top: 150px;
+    border: 3px solid black;
 }
 
 h2{
@@ -68,6 +69,5 @@ p{
     margin: 0px 190px;
     padding: 0%;
     height: 400px;
-    
-
 }
+

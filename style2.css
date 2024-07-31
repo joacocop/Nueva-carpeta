@@ -18,8 +18,8 @@ header{
     h2{
         text-align: center;
         background-color: skyblue;
-        margin-left: 35%;
-        margin-right: 35%;
+        margin-left: 5%;
+        margin-right: 5%;
         padding: 10px;
         border-radius: 15px ;
         border: 4px solid black;
@@ -31,9 +31,137 @@ header{
 .pri{
     border-radius: 20px;
     border: 4px solid black;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
     h2{
         font-size: 170%;
     }
+}
+
+
+
+.raros {
+    border-radius: 20px;
+    border: 4px solid black;
+    margin-left: 20%;
+    margin-right: 20%;
+    h2{
+        font-size: 170%;
+    }
+}
+
+.ter{
+    h2{
+        text-align: center;
+        background-color: lightgreen;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 10px;
+        border-radius: 15px ;
+        border: 4px solid black;
+    }
+}
+
+.cuar {
+    h2{
+        text-align: center;
+        background-color: rgb(0, 66, 233);
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 10px;
+        border-radius: 15px ;
+        border: 4px solid black;
+    }
+}
+
+.five {
+    h2{
+        text-align: center;
+        background-color: rgb(176, 2, 176);
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 10px;
+        border-radius: 15px ;
+        border: 4px solid black;
+    }
+}
+
+.six {
+    h2{
+        text-align: center;
+        background-color: red;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 10px;
+        border-radius: 15px ;
+        border: 4px solid black;
+    }
+}
+
+.sev {
+    h2{
+        text-align: center;
+        background-color: yellow;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 10px;
+        border-radius: 15px ;
+        border: 4px solid black;
+    }
+}
+
+.super {
+    border-radius: 20px;
+    border: 4px solid black;
+    margin-left: 20%;
+    margin-right: 20%;
+    h2{
+        font-size: 170%;
+    }
+}
+
+.epicos {
+    border-radius: 20px;
+    border: 4px solid black;
+    margin-left: 20%;
+    margin-right: 20%;
+    h2{
+        font-size: 170%;
+    }
+}
+
+.miticos {
+    border-radius: 20px;
+    border: 4px solid black;
+    margin-left: 20%;
+    margin-right: 20%;
+    h2{
+        font-size: 170%;
+    }
+}
+
+.leg {
+    border-radius: 20px;
+    border: 4px solid black;
+    margin-left: 20%;
+    margin-right: 20%;
+    h2{
+        font-size: 170%;
+    }
+}
+
+.fon { 
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgb(248, 208, 159);
+    border: 2px solid black;
+}
+
+html{
+    background-image: url(https://i.pinimg.com/originals/0e/ce/06/0ece0633c2017022c142609dfce629bf.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: auto;
+    height: auto;
 }
