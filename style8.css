@@ -4,10 +4,15 @@ li{
 }
 li a{
    display: block;
+   transition: 0.5s;
 }
 a{
     display: flex;
     margin: 2px;
+}
+li a:hover{
+    transform: scale(0.8);
+   
 }
 img{
     width: 100px;

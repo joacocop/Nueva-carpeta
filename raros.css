@@ -2,9 +2,11 @@
 li{
     display: inline;
     float: left;
+    
 }
 li a{
    display: block;
+    transition: 0.5s;
 }
 a{
     display: flex;
@@ -14,6 +16,12 @@ img{
     width: 100px;
     border: 2px solid  black;
     background-color: lightgreen;
+    
+
+}
+li a:hover{
+    transform: scale(0.8);
+   
 }
 
 div{
