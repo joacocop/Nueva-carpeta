@@ -6,6 +6,7 @@
     margin-bottom: 2%;
     margin-top: 2%;
     background-color: white;
+    padding: 20PX;
 }
 
 body{
@@ -63,4 +64,8 @@ img {
 
 .carll {
     width: 100px;
+}
+
+html{
+    text-align: justify;
 }
