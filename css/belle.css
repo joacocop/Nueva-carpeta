@@ -1,0 +1,67 @@
+.pri {
+    border-radius: 20px;
+    border: 4px solid black;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    background-color: white;
+    padding: 20PX;
+}
+
+body{
+    background-color: purple;
+}
+.bel{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+
+.gad{
+    display: grid;
+    grid-template-columns: 1fr 20fr;
+}
+
+.ga {
+display: grid;
+grid-template-columns: 1fr 20fr;
+}
+
+.hab {
+    display: grid;
+grid-template-columns: 1fr 20fr;
+}
+
+.ha {
+    display: grid;
+grid-template-columns: 1fr 20fr;
+}
+
+.hiper {
+    display: grid;
+grid-template-columns: 1fr 20fr;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    border: 3 px solid black;
+    margin: 30px;
+}
+
+.sec {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+h1{
+    border-bottom: 1px solid grey;
+}
+
+html{
+    text-align: justify;
+}
+
+.dm{
+    width: 125px;
+}

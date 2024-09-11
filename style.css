@@ -19,7 +19,7 @@ ul {
     }
 
     li a:hover {
-        background-color: red
+        background-color: yellow
     }
 
     a{
@@ -36,7 +36,7 @@ header{
     padding: 10px 0;
 }
 html{
-    background-image: url(https://i.pinimg.com/originals/17/85/34/1785347fe1ff67051360befee1726768.jpg);
+    background-image: url(../imagenes/fondoprincipal.png);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -44,12 +44,13 @@ html{
     height: auto;
 }
 main{
-    background-color: rgb(0, 157, 215);
-    color: white;
+    background-color:beige;
+    color: black;
     margin-right: 400px;
     margin-left: 400px;
     margin-top: 150px;
     border: 3px solid black;
+    padding: 20px;
 }
 
 h2{
@@ -63,11 +64,10 @@ p{
 .contenedorimg{
     margin-left: auto;
     margin-right: auto;
-    position: static;
-    line-height: 25px;
     width:700px ;
     margin: 0px 190px;
     padding: 0%;
     height: 400px;
+    justify-content: center;
 }
 
