@@ -56,3 +56,7 @@ grid-template-columns: 1fr 20fr;
 h1{
     border-bottom: 1px solid grey;
 }
+
+.dm{
+    width: 140px;
+}
