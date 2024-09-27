@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/inicio_registro.css">
-    <title>Comienza tu trayectoria</title>
+    <title>Unete a nosotros</title>
 </head>
 <body>
     <a href="../index.html" class="close-button">&times;</a>
 
     <div class="container" id="container">
         <div class="form-container sign-up">
-            <form action="../php/inicio_y_registro/registros.php" method="POST">
+            <form action="php/registros.php" method="POST">
                 <h1>Crear cuenta</h1>
                 <span>Usa tu nombre para registrarte</span>
                 <input type="text" name="nombre" placeholder="Nombre" required>
@@ -26,7 +26,7 @@
             </form>
         </div>
         <div class="form-container sign-in">
-            <form action="../php/inicio_y_registro/validar_datos.php" method="POST">
+            <form action="php/validar_datos.php" method="POST">
                 <h1>Iniciar sesión</h1>
                 <span>Usa tu email y contraseña</span>
                 <input type="email" name="email" placeholder="Email">
@@ -51,7 +51,8 @@
         </div>
     </div>
 
-    <script src="../html y css adicionales/java/inicio_registro.js"></script>
+    <script src="../java/inicio_registro.js"></script>
+
 </body>
 
 </html>
