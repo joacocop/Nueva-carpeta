@@ -20,6 +20,7 @@ body{
 .gad{
     display: grid;
     grid-template-columns: 1fr 20fr;
+    
 }
 
 .ga {
@@ -64,4 +65,8 @@ html{
 
 .dm{
     width: 180px;
+}
+
+.ancho{
+    width: 65px;
 }
