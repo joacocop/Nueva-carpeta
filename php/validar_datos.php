@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             session_start();
             $_SESSION['id'] = $row['id'];
             $_SESSION['nombre'] = $row['nombre'];
-            header("Location: ../perfil.php");
+            header("Location: ../index.html");
         } else {
             echo "Contraseña incorrecta";
         }
