@@ -55,7 +55,7 @@
     }
     
     html {
-        background-image: url(../imagenes/miticofondo.png);
+        background-image: url(../imagenes/fondo_leg.png);
         background-position: center center;
         background-size: cover;
         background-attachment: fixed;
@@ -94,7 +94,7 @@ img {
 }
 
 html {
-    background-image: url(../imagenes/fondomitico.webp);
+    background-image: url(../imagenes/fondo_leg.png);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
