@@ -1,0 +1,62 @@
+
+html{
+    background: no-repeat;
+    background-image: url(../imagenes/fondoo_logo.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width:auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+body{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(170, 0, 0);
+    width: 1000px;
+    margin-top: 40px;
+    padding: 40px 60px 40px 60px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+h1{
+ font-style: italic;
+ letter-spacing: 5px;
+    font-size: 40px;
+    width: 800px;
+    color: white;
+}
+h3{
+    font-size: 20px;
+}
+h4{
+    text-decoration: underline gray;
+}
+section{
+    background-color: beige;
+    padding: 10px 30px 10px 30px;
+    margin-bottom: 20px;
+    color: black;
+    border: burlywood solid 20px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 2px 5px rgb(0, 0, 0);
+}
+
+form div{    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Minecraft';
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 14px;
+}

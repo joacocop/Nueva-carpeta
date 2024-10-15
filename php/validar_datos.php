@@ -1,38 +1,25 @@
 <?php
-// Incluir el archivo de conexión
-include("../php/conexion.php");
+session_start();
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+include("conexion.php");
+if (!empty($_POST['email']) && !empty($_POST['password'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    // Buscar al usuario por email
-    $sql = "SELECT * FROM usuarios WHERE email = ?";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("s", $email);
-    $stmt->execute();
-    $result = $stmt->get_result();
+    // Primero verifica si el usuario es un usuario
+    $query_usuario = $conn->prepare('SELECT id, email, password FROM usuarios WHERE email = ?');
+    $query_usuario->bind_param('s', $email);
+    $query_usuario->execute();
+    $result_usuario = $query_usuario->get_result();
+    $user_usuario = $result_usuario->fetch_assoc();
 
-    if ($result->num_rows > 0) {
-        $row = $result->fetch_assoc();
-
-        // Verificar la contraseña
-        if (password_verify($password, $row['password'])) {
-            echo "Inicio de sesión exitoso";
-            // Iniciar la sesión y redirigir al perfil o dashboard
-            session_start();
-            $_SESSION['id'] = $row['id'];
-            $_SESSION['nombre'] = $row['nombre'];
-            header("Location: ../index.html");
-        } else {
-            echo "Contraseña incorrecta";
-        }
-    } else {
-        echo "No se encontró un usuario con ese email";
+    // Si el usuario es un usuario y la contraseña es correcta
+    if ($user_usuario && $password == $user_usuario['password']) {
+        $_SESSION['id'] = $user_usuario['id'];
+        header("Location: comentarios.php"); // Redirige a la página de usuarios
+        exit();
     }
-
-    // Cerrar la conexión
-    $stmt->close();
-    $conn->close();
+} else {
+    echo "<script>alert('Por favor, complete todos los campos');window.history.back();</script>";
 }
 ?>

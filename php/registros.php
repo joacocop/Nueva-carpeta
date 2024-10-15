@@ -1,46 +1,42 @@
 <?php
-// Incluir el archivo de conexión
-include("../php/conexion.php");
+session_start();
 
+include("conexion.php");
+// Obtener datos del formulario
+$nombre = $_POST['nombre'];
+$apellido = $_POST['apellido'];
+$fecha_nacimiento = $_POST['fecha_nacimiento'];
+$telefono = $_POST['telefono'];
+$direccion = $_POST['direccion'];
+$email = $_POST['email'];
+$password = $_POST['password'];
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+$sql_check_email = "SELECT * FROM usuarios WHERE email = ?";
+$stmt = $conn->prepare($sql_check_email);
+$stmt->bind_param("s", $email);
+$stmt->execute();
+$result = $stmt->get_result();
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    echo "Datos recibidos: ";
-    print_r($_POST);  // Esto mostrará los datos que llegan desde el formulario
-
-}
-
-
-// Verificar si se enviaron los datos del formulario
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $nombre = $_POST['nombre'];
-    $apellido = $_POST['apellido'];
-    $fecha_nacimiento = $_POST['fecha_nacimiento'];
-    $telefono = $_POST['telefono'];
-    $direccion = $_POST['direccion'];
-    $email = $_POST['email'];
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);  // Encriptar la contraseña
-
-    // Insertar los datos en la base de datos
-    $sql = "INSERT INTO usuarios (nombre, apellido, fecha_nacimiento, telefono, direccion, email, password) 
-            VALUES (?, ?, ?, ?, ?, ?, ?)";
-    
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("sssssss", $nombre, $apellido, $fecha_nacimiento, $telefono, $direccion, $email, $password);
-    
-    if ($stmt->execute()) {
-        echo "Registro exitoso";
-        // Redirigir a una página de éxito si deseas
-        header("Location: ../index.html");
+if ($result->num_rows > 0) {
+    echo "<script>alert('El email ya está registrado en el sistema.'); window.history.back();</script>"; // Alerta si el email ya existe
+} else {
+    // Si el email no está registrado, insertar el nuevo usuario
+    $sql_insert = "INSERT INTO usuarios (nombre, apellido, fecha_nacimiento, telefono, direccion, email, password)
+                   VALUES (?, ?, ?, ?, ?, ?, ?)";
+    $stmt_insert = $conn->prepare($sql_insert);
+    $stmt_insert->bind_param("ssssssss", $nombre, $apellido, $fecha_nacimiento, $telefono, $direccion, $email, $password);
+    if ($stmt_insert->execute()) {
+        $nuevo_id = $stmt_insert->insert_id; // Guardar la ID del nuevo usuario en la sesión
+        $_SESSION['id'] = $nuevo_id;
+        header("Location: comentarios.php");
+        exit();
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "Error: " . $stmt_insert->error;
     }
-    
-    // Cerrar la conexión
-    $stmt->close();
-    $conn->close();
+
+    $stmt_insert->close();
 }
+
+$stmt->close();
+$conn->close();
 ?>
